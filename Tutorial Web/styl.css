@@ -1,0 +1,729 @@
+
+/* Nav Start... */
+
+  nav {
+    float: right;
+   
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    float: left;
+    position: relative;
+  }
+  nav ul li a {
+    display: block;
+    padding: 0 20px;
+    line-height: 60px;
+    background: #ffffff;
+    color: #463f3f;   
+    text-decoration: none;
+    /*
+    The full path of this code is nav ul li a:not(:only-child):after. This means that the code will apply to any a tag in our nav list that is NOT an only child, aka any dropdown. The :after means it comes after the output of the tag. I’ve decided that to specify any nav item as a dropdown, it will be followed by a unicode arrow – ▾ (#9662).
+    */
+  }
+  nav ul li a:hover {
+    /* background: #f2f2f2; */
+    color: #b94400;
+  }
+  nav ul li a:not(:only-child):after {
+    padding-left: 4px;
+    content: ' ▾';
+  }
+  nav ul li ul li {
+    min-width: 190px;
+  }
+  nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+  } 
+  nav ul li ul li a:hover{
+ background-color: rgba(10, 10, 10, 0.479);
+ color: white;
+ transition-duration: 1s;
+  }
+  
+  .nav-dropdown {
+    position: absolute;
+    z-index: 1;
+    /* Guarantees that the dropdown will display on top of any content. */
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    display: none;
+  }
+  
+  .nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    height: 60px;
+    width: 70px;
+  }
+  
+ 
+  /* navBar End.... */
+
+  /* poster Div Start */
+
+ 
+.poster #poster1div{
+background-image: url('image/post4\ \(1\).jpg ');
+background-size: 100% 100%;
+background-attachment: fixed;
+
+ 
+}
+
+#poster2div{
+
+    height: 12cm;
+    background-color: #000000b8;
+    width: 100%;
+    color: white;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    background-attachment: fixed;
+  
+}
+.poster button{
+    background: none;
+    color: #e5dcdcf2;
+    padding: 10px;
+    /* border: white; */
+    /* outline: white; */
+    border: 0.1px solid;
+    border-radius: 5px;
+    padding: 13px 35px 13px 35px;
+}
+.poster button:hover{
+  background-color: white;
+  color: black;
+  transition-duration: 1s;
+}
+  /* poster Div End */
+
+  /* used By jqyery plugIn.. */
+  .ml2 {
+    font-weight: 900;
+    word-spacing: 3px;
+    font-size: 1.2em;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+  /* Card div Start */
+  #carddiv{
+      margin-top: 35px;
+  }
+
+ 
+  .cardcollection{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+  }
+  .cardcollection div{
+    width: 5cm;
+    text-align: center;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+  
+  
+  }
+  .cardcollection div:hover{
+    transition-duration: 1s;
+    box-shadow: black 0px 0px 19px 0px;
+  }
+  .cardcollection div:hover img{
+    transition-duration: 1s;
+    transform: rotate(360deg);
+  }
+  .cardcollection img{
+    width: 2cm;
+    height: 2cm;
+    margin-bottom: 24px;
+    box-shadow: 0px 0px 1px 0x black;
+    border-radius: 100%;
+    box-shadow: 0px 0px 13px -1px black;
+
+}
+  
+  .cardcollection h4{
+    font-family: sans-serif;
+  }
+  .cardcollection label{
+    font-family: system-ui;
+  }
+    /* card div end   */
+
+    /* .faqulity{
+
+    }
+
+    
+    .faqulity .lastchield{
+      background-image: url("image/post3\ \(1\).jpg");
+      background-size:100% 100%;
+      background-attachment: fixed;
+    } */
+
+
+
+    /* faqulity div start... */
+    .faqulity h2{
+      text-align: center;
+      font-family: cursive;
+      
+      background: #121FCF;
+      background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .faqulity .templet{
+      display: flex;
+      flex-direction: row;
+    justify-content: space-around;
+  
+    }
+    .faqulity .templet .left,.right{
+
+
+width: 6cm;
+width: 12cm;
+padding: 15px;
+
+    }
+    .faqulity .templet .right :nth-child(2){
+      background-image: url("image/post3\ \(1\).jpg");
+      background-size:100% 100%;
+      background-attachment: fixed;
+
+    }
+    .faqulity .templet .right h5{
+      font-family: 'Nanum Gothic', sans-serif;
+    }
+    .faqulity .templet .left h3{
+      font-family: 'EB Garamond', serif;
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Outfit', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Source Serif Pro', serif;
+    }
+
+    .faqulity .templet .left label{
+      font-family: 'Hind Siliguri', sans-serif;
+      padding: 10px;
+    }
+    
+    /* .faqulity end */
+
+    /* courses div  */
+    .courses{
+
+    }
+
+    .courses .hince h2,label{
+  text-align: center;
+  display: block;
+  font-family: serif;
+    }
+    .courses .hince label{
+
+      display: block;
+        }
+
+        .courses a{
+          text-decoration: none;
+          color: rgb(27, 26, 26);
+        }
+        .courses a:hover{
+  
+          color: rgb(27, 26, 26);
+        }
+        .courses .card-body label{
+  
+
+
+          color: #ff5722;
+        }
+
+
+
+
+        /* sub div */
+        .subject{
+          overflow: hidden;
+        }
+        .subject .col-md-3 img{
+
+          width: 100%;
+          height: 5cm;
+        
+       
+        }
+        .subject .col-md-3 div{
+
+       background-color: cadetblue;
+       background-color: #fbfcfb;
+       /* padding: 2px; */
+       text-align: center;
+    
+       box-shadow: rgb(144 134 134) 1px 2px 20px;
+       border-radius: 0px 0px 12px 12px;
+
+        }
+        .subject .col-md-3 div:hover {
+
+       transition-duration: 0.5s;
+  
+       transform: translateY(10px);
+           }
+
+           .subject a{
+             text-decoration: none;
+           }
+           .subject .col-md-4  p {
+            color: rgb(65, 62, 59);
+            font-family: sans-serif;
+                }
+
+
+                .resister{
+                  width: 100%;
+                  height: auto;
+              
+                    background:url('image/resisterbg\ \(1\).jpg') ;
+                    background-size: 100% 128%;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    overflow-x: hidden;
+
+                 
+                }
+                .resister .overly{
+                  width: 100%;
+                  height: auto;
+                  background-color: #660fff54;
+                  padding: 30px;
+                }
+
+                .rescard{
+                  background-color: #2f2b2b80;
+                  color: white;   
+                   
+     
+             
+                }
+                .rescard .last{
+                height: 30px;
+                background-color: #ffa600;
+                width: 100%;
+                }
+
+                .rescard a{
+                  text-decoration: none;
+                }
+                .rescard button{
+                  background: none;
+                  color: white;
+                  border: 0.2px solid #ffa600;
+                  /* padding: 5px; */
+                  display: block;
+                  margin-top: 8px;
+                  margin-left: auto;
+                  padding: 8px 16px 8px 16px;
+                  border-radius: 6px;
+                  }
+                  .rescard button:hover{
+                   background-color: #fffefb;
+                   color:  #181717;
+                   transition-duration: 0.4s;
+                    }
+                    .resister .card2 h1{
+                      padding: 11px;
+                      background-color: #3231317d;
+                      text-align: center;
+                      color: white;
+                      border-radius: 14px;
+                      font-family: 'Raleway';
+                }
+
+                .teacherinfo h1{
+
+                  text-align: center;
+                  font-family: revert;
+                     color: #322769e3;
+                     text-shadow: 2px 2px 2px black;
+                  
+                }
+
+
+ .teacherinfo img{
+    height: 10cm;
+    display: block;
+    margin: auto;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 10px 10px #0000006b;
+                }
+
+                .teacherinfo .inner{
+                  width: 100%;
+                   height: 10cm;
+                    background-color: #252a5d;
+                    overflow-x: hidden;
+                 
+
+                }
+
+                .teacherinfo .inner h1{
+                  
+                  color: white;
+                  color: white;
+    text-shadow: 4px 4px 10px black;
+    font-family: revert;
+                 
+
+                }
+
+                .teacherinfo .inner h5{
+                  
+                  text-align: center;
+                  color: silver;
+                  /* box-shadow: 0 0 10px black; */
+                  text-shadow: 1px 1px 10px black;
+                  font-family: cursive;
+                 
+
+                }
+
+                .teacherinfo .inner label{
+                  color: white;
+                  font-family: revert;
+                }
+                .teacherinfo span i{
+                  color: white;
+                     font-size: 35px;
+                }
+                /* .teacherinfo span{
+                  padding: 10px;
+                } */
+                .teacherinfo span i:hover{
+                  transition-duration: 0.5s;
+                 transform: scale(1.3);
+                }
+
+                .whychoose ul li{
+                  font-size: 20px;
+                  font-family: cursive;
+                  color: #333131;
+                }
+
+                .demo{
+                   overflow-x: hidden;
+                }
+
+                .demo .icon{
+                  font-size: 2pc;
+                }
+                .demo .icon span i{
+                  padding: 10px;
+                }
+.demo .icon span i:hover{
+  transition-duration: 1s;
+  box-shadow: 1px 1px 9px 0px;
+}
+       
+
+.whychoose{
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
+
+   /* Course Paged */
+   .coursspost{
+     height: 10cm;
+     width: 100%;
+    background-image: url('image/cousrss.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+
+   }
+   .coursspost .post{
+    height: 10cm;
+    width: 100%;
+    background-color: #00000066;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+  /* Poster Jquery Plug in  */
+  .ml11 {
+    font-weight: 700;
+    font-size: 3.5em;
+  }
+  
+  .ml11 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+  
+  .ml11 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+  }
+  
+  .ml11 .line1 { 
+    top: 0; 
+    left: 0;
+  }
+  
+  .ml11 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }   
+  
+  .coursscard h2{
+    text-align: center;
+  }
+
+  .aboutdivs .poster{
+  background-image: url('image/about\ bg.jpg');
+  background-size: 100% 140%;
+  background-attachment: fixed;
+  height: 10cm;
+  width: 100%;
+  overflow: hidden;
+  }
+  .aboutdivs .poster div{
+    height: 10cm;
+    width: 100%;
+    color: white;
+    
+    background-color: #0000ff82;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutdivs #title{
+    background-color: yellow;
+    padding: 10px;
+    font-size: 30px;
+    font-family: emoji;
+  }
+
+
+
+  /* Programing Code  */
+  .codesec{
+    width: 100%;
+  }
+
+  .codesec .element{
+    background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 76px 23px 23px 76px;
+  text-align: center;
+  /* background-image: linear-gradient( 96.5deg, rgba(39,103,187,1) 10.4%, rgba(16,72,144,1) 87.7% ); */
+    color: white;
+    box-shadow: 5px 4px 12px black;
+    /* transition-duration: 1s; */
+    padding: 7px;
+    background-image: linear-gradient( 94.3deg,  rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+  }
+  .codesec .element .icondiv{
+    padding: 19px;
+    /* border: 1px solid red; */
+    /* border-radius: 136px; */
+    background: white;
+    color: black;
+    /* background-image: radial-gradient( circle farthest-corner at 50.7% 54%, rgba(204,254,152,1) 0%, rgba(229,253,190,1) 92.4% ); */
+    box-shadow: 1px 1px 16px black;
+    border-radius: 100%
+}
+
+  
+  .codesec .element:hover{
+    background-image: linear-gradient( 199.3deg, rgba(26,33,64,1) 10.9%, rgba(81,84,115,1) 87.1% );
+  }
+
+  .codesec .element:hover .icondiv{
+   transform: rotateX(360deg);
+   transition-duration: 1s;
+
+  }
+
+  .codesec .imgitemdiv  img{
+    box-shadow: 0px 0px 21px 1px black;
+ 
+  }
+
+  .codesec  .imgitemdiv{
+    position: relative;
+    /* overflow: hidden; */
+
+  }
+
+  .codesec .imgitemdiv #textitemdiv{
+    color: rgb(255 255 255);
+    position: absolute;
+    bottom: 10%;
+    background: #0000006b;
+    text-align: center;
+    width: 94%;
+    font-family: inherit;
+  
+  }
+
+  .codesec .header{
+    text-align: center;
+    text-align: center;
+    display: block;
+    /* background: red; */
+    width: 40%;
+    margin: auto;
+    padding: 11px;
+    color: white;
+    /* background: darkslategrey; */
+    /* border-radius: 10px; */
+    color: #69008b;
+    font-family: auto;
+    border-bottom: 1px solid #111111;
+ 
+  }
+
+
+
+
+
+  /* contact us   */
+
+  .contactbg{
+    height: 10cm;
+    width: 100%;
+    background-image: url('image/contact-bg.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+
+  .contactbg .post{
+    background: #ffbc0017;
+    height: 10cm;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+
+
+  .contactbg .post h1 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+
+  .contactinp{
+    width: 100%;
+  }
+  .contactinp .inp label{
+    font-family: sans-serif;
+    margin-left: 6px;
+    
+  }
+  .contactinp .inp input{
+    border: none;
+    background: beige;
+    padding: 10px;
+  }
+  .contactinp .inp button{
+    padding: 13px;
+    color: white;
+    border: none;
+    background: orangered;
+  }
+  .contactinp .inp button:hover{
+    border: none;
+    background: #df3e02;
+  }
+  .contactinp .inp button:active{
+    border: none;
+  }
+  .contactother img{
+    height: 90%;
+    width: 100%;
+  }
+  .contactother a{
+    text-decoration: none;
+  }
+
+
+
+  /* card animation durection changee */
+  body{
+    overflow-x: hidden;
+  }
+  .animate__animated.animate__fadeInLeft {
+    --animate-duration: 2s;
+  }
+
+  .animate__animated.animate__fadeInUp {
+    --animate-duration: 2s;
+  }
+
+  .animate__animated.animate__flipInX {
+    --animate-duration: 2s;
+  }
+  .animate__animated.animate__fadeInRight {
+    --animate-duration: 2s;
+  }
+
+  .animate__animated.animate__slideInLeft {
+    --animate-duration: 2s;
+  }
+  .animate__animated.animate__slideInRight {
+    --animate-duration: 2s;
+  }
+
+  .animate__animated.animate__zoomIn {
+    --animate-duration: 1.4s;
+  }
+
+  .animate__animated.animate__bounceIn {
+    --animate-duration: 2s;
+  }
+ 
+ 

@@ -1,0 +1,203 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+.sidenav{
+  height: 100vh;
+  overflow-y: scroll;
+  position: sticky;
+  top: 55px;
+
+}
+.sidenav a{
+  text-decoration: none;
+
+}
+.sidenav ul{
+  background: darkslategrey;
+  width: 100%;
+padding-left: 5px;
+text-align: center;
+color: #3f00d8;
+
+font-family: fangsong;
+position: sticky;
+top: 0px;
+/* background: #009688; */
+background: white;
+}
+.sidenav ul li{
+  list-style: decimal-leading-zero; 
+  list-style: none;
+  /* color: white; */
+  /* text-shadow: 1px 1px 2px black; */
+  color: #002fb3;
+  border-bottom: 1px solid;
+}
+.sidenav ul li:hover{
+  transition-duration: 0.5s;
+  background: #009688;
+  color: white;
+  background: #5f16ed;
+
+
+  }
+  .sidenav ul h4{
+    color: #3f00d8;
+    font-style: italic;
+    font-family: fangsong;
+    position: sticky;
+    top: 0px;
+    /* background: #009688; */
+    background: white;
+  }
+  /* .mnav{
+    position: sticky;
+    top: 0px;
+  } */
+  .subjects h4{
+    text-align: center;
+    /* background-image: radial-gradient( circle 939px at 94.7% 50%, rgba(0,178,169,1) 0%, rgba(0,106,101,1) 76.9% ); */
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    color: #3e00d3;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+
+  .mnav nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient( 110.3deg , rgba(73,93,109,1) 4.3%, rgba(49,55,82,1) 96.7% );
+    height: 55px;
+    background: blueviolet;
+  }
+
+  .mnav .logodiv ul{
+    list-style: none;
+    
+
+  }
+
+  .mnav nav .itemdiv ul{
+    display: flex;
+    flex-direction: row;
+    /* width: 121%; */
+    /* border: 1px solid; */
+    width: 66vw;
+    justify-content: space-between;
+    list-style: none;
+    
+
+  }
+  
+  .mnav nav .itemdiv ul a{
+    text-decoration: none;
+    line-height: 55px;
+    color: white;
+    padding: 3px 7px 3px 7px;
+
+  }
+  .mnav nav .itemdiv ul a:hover{
+    transition-duration: 1s;
+    color: cyan;
+    background: white;
+    color: black;
+
+    border-radius: 2px;
+
+  }
+  .mnav .logodiv ul a{
+    color: white;
+    line-height: 55px;
+    text-decoration: none;
+    
+
+  }
+  .mnav .homediv a i{
+    color: white;
+    line-height: 55px;
+    text-decoration: none;
+    font-size: 10px;
+
+  }
+
+  .mnav .homediv a{
+    border: 1px solid white;
+    border-radius: 18px;
+    padding: 3px 14px 8px 14px;
+  }
+  .mnav .homediv a i:hover{
+    color: black;
+    transition-duration: 0.5s;
+  }
+  .mnav .homediv a:hover{
+    background-color: white;
+       transition-duration: 0.5s;
+
+  }
+  .mnav nav .bar{
+    line-height: 55px;
+    list-style: none;
+    color: white;
+    display: none;
+  }
+
+.mnav{
+  width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+  /* For Header nav*/
+.headernav nav{
+  height: 50px;
+}
+  .headernav .logo li{
+    font-size: 20px;
+    line-height: 50px;
+    list-style: none;
+  }
+  .headernav .logo li a{
+   text-decoration: none;
+  }
+  .headernav .logo{
+  
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between
+  }
+ 
+
+  .headernav .logo #login{
+    border: 1px solid;
+    padding: 7px;
+   border-radius: 4px;
+    border-radius: 0px;
+    margin-right: 6px;
+    font-size: 16px;
+    margin-right: 35px;
+    color: darkblue;
+    transition-duration:0.6s;  
+}
+.headernav .logo #login:hover{
+background-color: darkblue;
+color: white;
+
+}
+  
+  .headernav .logo #menu{
+    display: none;
+  }
+  .headernav .logo #logo{
+    color: darkblue
+  }
+
+ 
+
+
+  
